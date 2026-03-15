@@ -1,0 +1,78 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;      
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 0;            
+}
+
+
+.container {
+    perspective: 1000px; 
+}
+
+.card{
+    position: relative;
+    z-index: 1;
+    border-radius: 12px;
+    border-color: aliceblue;
+    transform: rotateX(7deg);
+    transition: transform 0.3s;
+}
+
+.btn{
+    color: hsl(20, 1%, 40%);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.convert i {
+      color: hsl(20, 1%, 40%);
+}
+
+.btn:hover{
+    background: hsl(36, 75%, 62%);
+    border-color: #fff;
+}
+input::placeholder{
+    font-size: 14px;
+}
+.form-select{
+    font-size: 14px;
+}
+
+.form-control{
+    border-color: hsl(30, 2%, 57%);
+    box-shadow: none;
+}
+.form-control:focus{
+    border-color: hsl(36, 95%, 49%);
+    box-shadow: none;
+}
+
+.form-select{
+    border-color: hsl(30, 2%, 57%);
+    box-shadow: none;
+}
+.form-select:focus{
+    border-color: hsl(36, 95%, 49%);
+    box-shadow: none;
+}
+
+
